@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @newspaper.name %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @newspaper.publisher %>
+</p>
+
+<p>
+  <strong>Feed:</strong>
+  <%= @newspaper.feed %>
+</p>
+
+<% @articles.each do |article|%>
+  <h1><%= article.title %></h1>
+  <p><%= article.intro %></p>
+  <p><%= article.content %></p>
+<% end %>
+<%= link_to 'Edit', edit_newspaper_path(@newspaper) %> |
+<%= link_to 'Back', newspapers_path %>

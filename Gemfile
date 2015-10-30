@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'google-search'
+gem 'guard-livereload'
+gem 'anemone'
+gem 'nokogiri'
 gem 'treat'
 gem 'feedjira'
 gem 'jqcloud-rails'
